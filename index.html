@@ -6,9 +6,10 @@
 
     <title>Humaida Danjuma Khalid | Procurement & Data Analytics</title>
 
-    <meta name="description" content="Portfolio of Humaida Danjuma Khalid, a Procurement and Data Analytics Professional focused on data-driven decision making, supplier performance and operational efficiency.">
+    <meta name="description" content="Portfolio of Humaida Danjuma Khalid, a Procurement & Data Analytics Professional focused on data-driven decision making, supplier performance and operational efficiency.">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -39,7 +40,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #ffffff;
+            background: rgba(255,255,255,0.96);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -47,16 +48,22 @@
         }
 
         .logo {
-            font-size: 20px;
+            font-size: 21px;
             font-weight: 700;
             color: #10233f;
+            letter-spacing: 1px;
         }
 
         .nav-links {
             display: flex;
-            gap: 28px;
+            gap: 30px;
             list-style: none;
             font-size: 14px;
+        }
+
+        .nav-links a {
+            color: #394456;
+            transition: 0.3s;
         }
 
         .nav-links a:hover {
@@ -66,15 +73,20 @@
         /* HERO */
 
         .hero {
-            min-height: 85vh;
+            min-height: 88vh;
             display: flex;
             align-items: center;
-            padding: 80px 8%;
-            background: #f8f9fb;
+            padding: 90px 8%;
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8f9fb 0%,
+                    #ffffff 65%
+                );
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
         }
 
         .eyebrow {
@@ -82,42 +94,43 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            font-size: 13px;
+            font-size: 12px;
             margin-bottom: 18px;
         }
 
         .hero h1 {
-            font-size: clamp(42px, 7vw, 76px);
-            line-height: 1.05;
+            font-size: clamp(44px, 7vw, 78px);
+            line-height: 1.03;
             color: #10233f;
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
 
         .hero h2 {
             font-size: clamp(22px, 3vw, 32px);
             font-weight: 500;
+            color: #3f4a5c;
             margin-bottom: 20px;
-            color: #3d4758;
         }
 
         .hero p {
-            max-width: 680px;
+            max-width: 720px;
             font-size: 18px;
-            color: #5c6573;
+            color: #5d6675;
             margin-bottom: 35px;
         }
 
         .buttons {
             display: flex;
-            gap: 15px;
+            gap: 14px;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 13px 24px;
+            display: inline-block;
+            padding: 13px 25px;
             border-radius: 5px;
             font-weight: 600;
-            transition: 0.3s;
+            transition: 0.3s ease;
         }
 
         .btn-primary {
@@ -126,7 +139,8 @@
         }
 
         .btn-primary:hover {
-            background: #1d385f;
+            background: #1e3a61;
+            transform: translateY(-2px);
         }
 
         .btn-outline {
@@ -137,6 +151,35 @@
         .btn-outline:hover {
             background: #10233f;
             color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* INTRO STRIP */
+
+        .intro-strip {
+            padding: 45px 8%;
+            border-top: 1px solid #eeeeee;
+            border-bottom: 1px solid #eeeeee;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            background: #ffffff;
+        }
+
+        .intro-item {
+            padding: 10px 20px;
+            border-left: 3px solid #b28a3b;
+        }
+
+        .intro-item h3 {
+            color: #10233f;
+            margin-bottom: 6px;
+            font-size: 17px;
+        }
+
+        .intro-item p {
+            color: #697386;
+            font-size: 14px;
         }
 
         /* GENERAL SECTIONS */
@@ -146,14 +189,14 @@
         }
 
         .section-title {
-            font-size: 38px;
+            font-size: 40px;
             color: #10233f;
             margin-bottom: 15px;
         }
 
         .section-subtitle {
             color: #697386;
-            max-width: 650px;
+            max-width: 680px;
             margin-bottom: 45px;
         }
 
@@ -161,8 +204,8 @@
 
         .about {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 70px;
             align-items: center;
         }
 
@@ -173,13 +216,18 @@
 
         .about-highlight {
             background: #f8f9fb;
-            padding: 35px;
+            padding: 38px;
             border-left: 4px solid #b28a3b;
         }
 
         .about-highlight h3 {
             color: #10233f;
             margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .about-highlight p {
+            color: #5d6675;
         }
 
         /* PROJECTS */
@@ -196,20 +244,21 @@
 
         .project-card {
             background: #ffffff;
-            border: 1px solid #e8eaf0;
-            padding: 32px;
-            transition: 0.3s;
+            border: 1px solid #e7e9ee;
+            padding: 34px;
+            transition: 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(16, 35, 63, 0.08);
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(16, 35, 63, 0.08);
         }
 
         .project-number {
             color: #b28a3b;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 12px;
+            letter-spacing: 1px;
             margin-bottom: 15px;
         }
 
@@ -271,7 +320,7 @@
         }
 
         .contact p {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 30px;
             color: #d8dee8;
         }
@@ -309,12 +358,21 @@
             }
 
             .hero {
-                padding: 70px 6%;
-                min-height: 80vh;
+                padding: 75px 6%;
+                min-height: 82vh;
             }
 
             section {
                 padding: 70px 6%;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .intro-strip {
+                grid-template-columns: 1fr;
+                padding: 35px 6%;
             }
 
             .about {
@@ -330,10 +388,11 @@
                 grid-template-columns: 1fr;
             }
 
-            .hero p {
-                font-size: 16px;
+            .section-title {
+                font-size: 32px;
             }
         }
+
     </style>
 </head>
 
@@ -342,15 +401,21 @@
     <!-- NAVIGATION -->
 
     <nav>
-        <div class="logo">HDK</div>
+
+        <div class="logo">
+            HDK
+        </div>
 
         <ul class="nav-links">
+
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+
         </ul>
+
     </nav>
 
 
@@ -373,9 +438,9 @@
             </h2>
 
             <p>
-                I turn procurement data into meaningful insights that support
-                smarter business decisions, stronger supplier performance and
-                operational efficiency.
+                I combine procurement expertise with data and analytics to
+                uncover insights, improve supplier performance and support
+                smarter business decisions.
             </p>
 
             <div class="buttons">
@@ -384,8 +449,10 @@
                     View My Work
                 </a>
 
-                <a href="#contact" class="btn btn-outline">
-                    Let's Connect
+                <a href="YOUR-LINKEDIN-URL"
+                   target="_blank"
+                   class="btn btn-outline">
+                    LinkedIn
                 </a>
 
             </div>
@@ -393,6 +460,51 @@
         </div>
 
     </section>
+
+
+    <!-- WHAT I DO -->
+
+    <div class="intro-strip">
+
+        <div class="intro-item">
+
+            <h3>
+                Procurement
+            </h3>
+
+            <p>
+                Sourcing • Suppliers • Purchase Orders • Spend
+            </p>
+
+        </div>
+
+
+        <div class="intro-item">
+
+            <h3>
+                Data & Analytics
+            </h3>
+
+            <p>
+                Excel • Power Query • Power BI • SPSS
+            </p>
+
+        </div>
+
+
+        <div class="intro-item">
+
+            <h3>
+                Business Insights
+            </h3>
+
+            <p>
+                Dashboards • Performance • Decision Support
+            </p>
+
+        </div>
+
+    </div>
 
 
     <!-- ABOUT -->
@@ -417,18 +529,19 @@
                 </p>
 
                 <p>
-                    My work involves procurement operations, supplier management,
-                    purchase orders, vendor evaluation and using data to understand
-                    procurement performance.
+                    My experience includes procurement operations, supplier
+                    management, purchase orders, vendor evaluation and
+                    procurement analysis.
                 </p>
 
                 <p>
-                    I enjoy transforming raw information into clear dashboards,
-                    useful insights and practical recommendations that can support
-                    better decision-making.
+                    I enjoy transforming raw information into clear
+                    dashboards, useful insights and practical recommendations
+                    that support better decision-making.
                 </p>
 
             </div>
+
 
             <div class="about-highlight">
 
@@ -437,7 +550,7 @@
                 </h3>
 
                 <p>
-                    I believe good data should do more than produce numbers.
+                    Good data should do more than produce numbers.
                     It should help people understand what is happening,
                     why it is happening and what to do next.
                 </p>
@@ -462,11 +575,13 @@
         </h2>
 
         <p class="section-subtitle">
-            A selection of procurement and data analytics projects
-            demonstrating practical problem-solving and analytical thinking.
+            Practical projects demonstrating procurement knowledge,
+            analytical thinking and data-driven problem solving.
         </p>
 
+
         <div class="project-grid">
+
 
             <div class="project-card">
 
@@ -545,7 +660,7 @@
                 </h3>
 
                 <p>
-                    Statistical analysis of work-related stress among
+                    Statistical analysis exploring work-related stress among
                     Community Health Extension Workers.
                 </p>
 
@@ -580,6 +695,7 @@
 
         <div class="skills-grid">
 
+
             <div class="skill-box">
 
                 <h3>
@@ -587,12 +703,14 @@
                 </h3>
 
                 <ul>
+
                     <li>Sourcing & Procurement</li>
                     <li>Supplier Management</li>
                     <li>Vendor Evaluation</li>
                     <li>Purchase Order Management</li>
                     <li>Spend Analysis</li>
                     <li>Cost & Savings Analysis</li>
+
                 </ul>
 
             </div>
@@ -605,12 +723,14 @@
                 </h3>
 
                 <ul>
+
                     <li>Microsoft Excel</li>
                     <li>Power Query</li>
                     <li>Data Cleaning</li>
                     <li>Data Visualization</li>
                     <li>Statistical Analysis</li>
                     <li>Dashboard Development</li>
+
                 </ul>
 
             </div>
@@ -623,12 +743,14 @@
                 </h3>
 
                 <ul>
+
                     <li>Excel</li>
                     <li>Power BI</li>
                     <li>SPSS</li>
                     <li>Google Forms</li>
                     <li>Kobo Collect</li>
                     <li>Microsoft Office</li>
+
                 </ul>
 
             </div>
@@ -651,17 +773,21 @@
         </h2>
 
         <p>
-            I'm open to connecting with professionals, organizations
-            and opportunities across procurement, analytics and business intelligence.
+            I'm open to connecting with professionals, organizations and
+            opportunities across procurement, analytics and business intelligence.
         </p>
 
-        <div class="buttons" style="justify-content: center;">
 
-            <a href="#" class="btn btn-outline">
+        <div class="buttons" style="justify-content:center;">
+
+            <a href="https://www.linkedin.com/in/humaida-danjuma-66057224b"
+               target="_blank"
+               class="btn btn-outline">
                 LinkedIn
             </a>
 
-            <a href="mailto:your-email@example.com" class="btn btn-outline">
+            <a href="mailto:danjumahumaida@gmail.com"
+               class="btn btn-outline">
                 Email Me
             </a>
 
