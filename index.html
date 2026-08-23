@@ -194,40 +194,15 @@
             margin-bottom: 15px;
         }
 
-        .section-subtitle {
-            color: #697386;
-            max-width: 680px;
-            margin-bottom: 45px;
-        }
-
         /* ABOUT */
 
         .about {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 70px;
-            align-items: center;
+            max-width: 900px;
         }
 
         .about-text p {
             margin-bottom: 18px;
             color: #596273;
-        }
-
-        .about-highlight {
-            background: #f8f9fb;
-            padding: 38px;
-            border-left: 4px solid #b28a3b;
-        }
-
-        .about-highlight h3 {
-            color: #10233f;
-            margin-bottom: 12px;
-            font-size: 22px;
-        }
-
-        .about-highlight p {
-            color: #5d6675;
         }
 
         /* PROJECTS */
@@ -277,6 +252,20 @@
             font-size: 13px;
             color: #10233f;
             font-weight: 600;
+            margin-bottom: 22px;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #b28a3b;
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: #10233f;
+            transform: translateX(4px);
         }
 
         /* SKILLS */
@@ -375,11 +364,6 @@
                 padding: 35px 6%;
             }
 
-            .about {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
             .project-grid {
                 grid-template-columns: 1fr;
             }
@@ -473,7 +457,7 @@
             </h3>
 
             <p>
-                Sourcing • Suppliers • Purchase Orders • Spend
+                Sourcing • Suppliers • Purchase Orders
             </p>
 
         </div>
@@ -515,12 +499,8 @@
 
             <div class="about-text">
 
-                <div class="eyebrow">
-                    About Me
-                </div>
-
                 <h2 class="section-title">
-                    Procurement meets data.
+                    Procurement meets data
                 </h2>
 
                 <p>
@@ -529,30 +509,9 @@
                 </p>
 
                 <p>
-                    My experience includes procurement operations, supplier
-                    management, purchase orders, vendor evaluation and
-                    procurement analysis.
-                </p>
-
-                <p>
                     I enjoy transforming raw information into clear
                     dashboards, useful insights and practical recommendations
                     that support better decision-making.
-                </p>
-
-            </div>
-
-
-            <div class="about-highlight">
-
-                <h3>
-                    My approach
-                </h3>
-
-                <p>
-                    Good data should do more than produce numbers.
-                    It should help people understand what is happening,
-                    why it is happening and what to do next.
                 </p>
 
             </div>
@@ -574,14 +533,11 @@
             Featured Projects
         </h2>
 
-        <p class="section-subtitle">
-            Practical projects demonstrating procurement knowledge,
-            analytical thinking and data-driven problem solving.
-        </p>
-
 
         <div class="project-grid">
 
+
+            <!-- PROJECT 01 -->
 
             <div class="project-card">
 
@@ -590,69 +546,63 @@
                 </div>
 
                 <h3>
-                    Procurement Performance Dashboard
+                    Procurement Performance & Supplier Analytics
                 </h3>
 
                 <p>
-                    An interactive dashboard designed to monitor procurement
-                    spend, savings, supplier performance and delivery efficiency.
+                    A Power BI analysis of procurement spend, savings,
+                    supplier performance and delivery efficiency across
+                    650 purchase orders.
                 </p>
 
                 <div class="project-tools">
-                    Excel • Power Query • Data Visualization
+                    Power BI • Power Query • DAX • Procurement Analytics
                 </div>
+
+                <a href="procurement.html" class="project-link">
+                    View Procurement Project →
+                </a>
 
             </div>
 
 
-            <div class="project-card">
-                <div class="project-card">
-
-    <div class="project-number">
-        02 — PROCUREMENT ANALYTICS
-    </div>
-
-    <h3>
-        Procurement Performance & Supplier Analytics
-    </h3>
-
-    <p>
-        A Power BI analysis of procurement spend, savings, supplier
-        performance and delivery efficiency across 650 purchase orders.
-    </p>
-
-    <div class="project-tools">
-        Power BI • Power Query • DAX • Procurement Analytics
-    </div>
-<a href="procurement.html" class="project-link">
-    View Procurement Project →
-</a>
-
-</div>
-
-                    03 — DATA ANALYTICS
-                </div>
-
-                <h3>
-                    Procurement Spend Analysis
-                </h3>
-
-                <p>
-                    Analysis of procurement expenditure across suppliers,
-                    categories and periods to identify trends and opportunities.
-                </p>
-
-                <div class="project-tools">
-                    Excel • Power Query • Analytics
-                </div>
-
-            </div>
-
+            <!-- PROJECT 02 -->
 
             <div class="project-card">
 
                 <div class="project-number">
-                    04 — PUBLIC HEALTH
+                    02 — SALES
+                </div>
+
+                <h3>
+                    Sales Performance Dashboard
+                </h3>
+
+                <p>
+                    An interactive sales dashboard designed to explore
+                    performance trends, business activity and key sales
+                    indicators.
+                </p>
+
+                <div class="project-tools">
+                    Power BI • Data Analytics • Data Visualization
+                </div>
+
+                <a href="CAPSTONE.pdf"
+                   target="_blank"
+                   class="project-link">
+                    View Sales Dashboard →
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 03 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    03 — PUBLIC HEALTH
                 </div>
 
                 <h3>
@@ -686,11 +636,6 @@
         <h2 class="section-title">
             Skills & Tools
         </h2>
-
-        <p class="section-subtitle">
-            A combination of procurement knowledge, analytical skills
-            and business-focused problem solving.
-        </p>
 
 
         <div class="skills-grid">
