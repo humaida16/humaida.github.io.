@@ -1,13 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Procurement Performance & Supplier Analytics | Humaida Danjuma Khalid</title>
 
     <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -30,22 +38,30 @@
             font-weight: bold;
         }
 
+        .back:hover {
+            color: #173b2b;
+        }
+
         .label {
             color: #287a52;
             font-size: 14px;
             font-weight: bold;
             letter-spacing: 1px;
+            margin-bottom: 10px;
         }
 
         h1 {
             font-size: 42px;
+            line-height: 1.2;
             margin: 10px 0;
+            color: #173b2b;
         }
 
         .subtitle {
             font-size: 19px;
             color: #5b6f64;
             max-width: 750px;
+            margin-bottom: 35px;
         }
 
         section {
@@ -57,7 +73,12 @@
 
         h2 {
             margin-top: 0;
+            margin-bottom: 15px;
             color: #173b2b;
+        }
+
+        p {
+            color: #52665b;
         }
 
         .stats {
@@ -71,22 +92,33 @@
             background: #edf6f0;
             padding: 20px;
             border-radius: 12px;
+            color: #52665b;
         }
 
         .stat strong {
             display: block;
             font-size: 25px;
             color: #287a52;
-        }
-
-        .dashboard {
-            width: 100%;
-            border-radius: 12px;
-            margin-top: 15px;
+            margin-bottom: 5px;
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #52665b;
+        }
+
+        .closing {
+            text-align: center;
+            background: #173b2b;
+            color: white;
+        }
+
+        .closing h2 {
+            color: white;
+        }
+
+        .closing p {
+            color: #dce9e1;
         }
 
         .button {
@@ -97,37 +129,74 @@
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 10px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background: #1f6343;
         }
 
         @media (max-width: 700px) {
+
+            .container {
+                padding: 40px 18px;
+            }
+
             h1 {
                 font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
             }
 
             .stats {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            section {
+                padding: 24px;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
 <div class="container">
 
-    <a href="index.html" class="back">← Back to Portfolio</a>
 
-    <div class="label">PROCUREMENT ANALYTICS</div>
+    <!-- BACK TO PORTFOLIO -->
 
-    <h1>Procurement Performance & Supplier Analytics</h1>
+    <a href="index.html" class="back">
+        ← Back to Portfolio
+    </a>
+
+
+    <!-- PROJECT HEADER -->
+
+    <div class="label">
+        PROCUREMENT ANALYTICS
+    </div>
+
+    <h1>
+        Procurement Performance & Supplier Analytics
+    </h1>
 
     <p class="subtitle">
         Using procurement data to evaluate spend, savings, supplier performance
         and delivery efficiency.
     </p>
 
+
+    <!-- KEY METRICS -->
+
     <div class="stats">
+
         <div class="stat">
             <strong>₦26.9B</strong>
             Procurement Spend
@@ -147,163 +216,106 @@
             <strong>40.5%</strong>
             On-Time Delivery
         </div>
+
     </div>
 
+
+    <!-- EXECUTIVE SUMMARY -->
+
     <section>
-        <h2>Executive Summary</h2>
+
+        <h2>
+            Executive Summary
+        </h2>
 
         <p>
-            This project analyses procurement data to evaluate spend, savings,
-            supplier performance and delivery efficiency.
+            This project analyses procurement transactions to evaluate
+            purchasing activity, expenditure, savings, supplier performance
+            and delivery efficiency.
         </p>
 
-        <p>
-            The analysis covered ₦26.9B in procurement spend across 650 purchase
-            orders, with ₦1.8B in reported savings. Only 40.5% of purchase
-            orders were delivered on time, with 387 delayed POs identified.
+        <p style="margin-top: 15px;">
+            The analysis covered ₦26.9B in procurement spend across 650
+            purchase orders, with ₦1.8B in reported savings. Only 40.5% of
+            purchase orders were delivered on time, with 387 delayed POs
+            identified.
         </p>
 
-        <p>
-            The dashboard provides a consolidated view of procurement
-            performance, helping identify high-spend areas, supplier risks and
-            opportunities for operational improvement.
+        <p style="margin-top: 15px;">
+            The analysis provides a consolidated view of procurement
+            performance and highlights areas requiring closer supplier
+            monitoring and operational improvement.
         </p>
+
     </section>
 
-    <section>
-        <h2>Business Problem</h2>
 
-        <p>
-            Procurement data contained valuable information across purchasing,
-            supplier and delivery activities, but a consolidated view was needed
-            to support better decision-making.
-        </p>
-    </section>
+    <!-- RECOMMENDATIONS -->
 
     <section>
-        <h2>Objectives</h2>
+
+        <h2>
+            Recommendations
+        </h2>
 
         <ul>
-            <li>Analyse procurement spend and savings.</li>
-            <li>Evaluate supplier delivery performance.</li>
-            <li>Identify delayed purchase orders and supplier risks.</li>
-            <li>Monitor procurement efficiency.</li>
-            <li>Develop an interactive management dashboard.</li>
-        </ul>
-    </section>
 
-    <section>
-        <h2>Data & Methodology</h2>
-
-        <h3>Data Preparation</h3>
-
-        <p>
-            Raw procurement data was cleaned and transformed using Power Query,
-            including data-quality checks, standardisation and creation of
-            analytical fields.
-        </p>
-
-        <h3>Analysis</h3>
-
-        <p>
-            DAX measures were developed to calculate procurement spend, savings,
-            purchase order activity, on-time delivery, delayed POs, average
-            delivery days and supplier performance.
-        </p>
-
-        <h3>Visualisation</h3>
-
-        <p>
-            An interactive Power BI dashboard was developed to provide an
-            executive view of procurement activity and detailed supplier
-            performance analysis.
-        </p>
-    </section>
-
-    <section>
-        <h2>Dashboard</h2>
-
-        <p>
-            The complete Power BI dashboard is available below.
-        </p>
-
-        <a href="Procurement%20(1).pdf" target="_blank" class="button">
-            View Procurement Dashboard →
-        </a>
-    </section>
-
-    <section>
-        <h2>Key Findings</h2>
-
-        <ul>
-            <li>
-                <strong>Delivery performance requires attention:</strong>
-                40.5% of POs were delivered on time, while 387 were delayed.
-            </li>
-
-            <li>
-                <strong>Supplier performance varies:</strong>
-                Delivery reliability and average delivery times differed across
-                suppliers.
-            </li>
-
-            <li>
-                <strong>High-spend suppliers require closer monitoring:</strong>
-                Suppliers combining significant procurement exposure with weak
-                delivery performance represent greater operational risk.
-            </li>
-
-            <li>
-                <strong>Supplier ratings tell only part of the story:</strong>
-                Combining ratings with actual delivery performance provides a
-                more complete view of supplier effectiveness.
-            </li>
-
-            <li>
-                <strong>Spend concentration creates opportunities:</strong>
-                High-spend categories provide opportunities for stronger cost
-                management and strategic sourcing.
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Recommendations</h2>
-
-        <ul>
             <li>
                 Strengthen supplier performance reviews for suppliers with
                 recurring delivery issues.
             </li>
 
             <li>
-                Prioritise high-risk suppliers where high spend is combined
-                with weak delivery performance.
+                Prioritise high-risk suppliers where significant procurement
+                spend is combined with weak delivery performance.
             </li>
 
             <li>
-                Introduce corrective action plans for persistent delivery delays.
+                Introduce corrective action plans for persistent delivery
+                delays.
             </li>
 
             <li>
-                Combine delivery performance, supplier ratings, spend and delay
-                history when evaluating suppliers.
+                Combine delivery performance, supplier ratings, spend and
+                delay history when evaluating suppliers.
             </li>
+
+            <li>
+                Use high-spend categories to identify opportunities for
+                stronger cost management and strategic sourcing.
+            </li>
+
         </ul>
+
     </section>
 
-    <section>
-        <h2>Tools & Skills</h2>
+
+    <!-- CLOSING -->
+
+    <section class="closing">
+
+        <h2>
+            Explore the Dashboard
+        </h2>
 
         <p>
-            <strong>
-                Power BI · Power Query · DAX · Excel · Data Cleaning ·
-                Procurement Analytics · Data Visualization
-            </strong>
+            View the interactive procurement analysis and supplier
+            performance dashboard separately.
         </p>
+
+        <a
+            href="Procurement%20(1).pdf"
+            target="_blank"
+            class="button"
+        >
+            View Procurement Dashboard →
+        </a>
+
     </section>
+
 
 </div>
 
 </body>
+
 </html>
