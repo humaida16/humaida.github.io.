@@ -194,17 +194,6 @@
             margin-bottom: 15px;
         }
 
-        /* ABOUT */
-
-        .about {
-            max-width: 900px;
-        }
-
-        .about-text p {
-            margin-bottom: 18px;
-            color: #596273;
-        }
-
         /* PROJECTS */
 
         .projects {
@@ -253,6 +242,12 @@
             color: #10233f;
             font-weight: 600;
             margin-bottom: 22px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
         }
 
         .project-link {
@@ -375,6 +370,12 @@
             .section-title {
                 font-size: 32px;
             }
+
+            .project-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+
         }
 
     </style>
@@ -393,7 +394,6 @@
         <ul class="nav-links">
 
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -491,36 +491,6 @@
     </div>
 
 
-    <!-- ABOUT -->
-
-    <section id="about">
-
-        <div class="about">
-
-            <div class="about-text">
-
-                <h2 class="section-title">
-                    Procurement meets data
-                </h2>
-
-                <p>
-                    I am a procurement professional with a growing focus on
-                    data analytics and business intelligence.
-                </p>
-
-                <p>
-                    I enjoy transforming raw information into clear
-                    dashboards, useful insights and practical recommendations
-                    that support better decision-making.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
     <!-- PROJECTS -->
 
     <section class="projects" id="projects">
@@ -537,7 +507,7 @@
         <div class="project-grid">
 
 
-            <!-- PROJECT 01 -->
+            <!-- PROJECT 01: PROCUREMENT -->
 
             <div class="project-card">
 
@@ -559,14 +529,25 @@
                     Power BI • Power Query • DAX • Procurement Analytics
                 </div>
 
-                <a href="procurement.html" class="project-link">
-                    View Procurement Project →
-                </a>
+                <div class="project-links">
+
+                    <a href="Procurement%20(1).pdf"
+                       target="_blank"
+                       class="project-link">
+                        View Dashboard →
+                    </a>
+
+                    <a href="procurement.html"
+                       class="project-link">
+                        View Procurement Project →
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <!-- PROJECT 02 -->
+            <!-- PROJECT 02: SALES -->
 
             <div class="project-card">
 
@@ -588,16 +569,20 @@
                     Power BI • Data Analytics • Data Visualization
                 </div>
 
-                <a href="CAPSTONE.pdf"
-                   target="_blank"
-                   class="project-link">
-                    View Sales Dashboard →
-                </a>
+                <div class="project-links">
+
+                    <a href="CAPSTONE.pdf"
+                       target="_blank"
+                       class="project-link">
+                        View Dashboard →
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <!-- PROJECT 03 -->
+            <!-- PROJECT 03: PUBLIC HEALTH -->
 
             <div class="project-card">
 
