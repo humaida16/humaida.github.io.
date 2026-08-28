@@ -1,481 +1,1509 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* =========================================================
+   HUMAIDA DANJUMA KHALID
+   PROCUREMENT & DATA ANALYTICS PORTFOLIO
 
-    <title>Humaida Danjuma Khalid | Procurement & Data Analytics Professional</title>
+   NAVY + GOLD
+   ========================================================= */
 
-    <meta name="description" content="Humaida Danjuma Khalid | Procurement & Data Analytics Professional">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+/* =========================================================
+   GLOBAL
+========================================================= */
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
+html {
+    scroll-behavior: smooth;
+}
 
-<!-- ================= NAVIGATION ================= -->
 
-<header class="hero" id="home">
+body {
+    font-family: "DM Sans", Arial, sans-serif;
 
-    <nav class="navbar">
+    color: #17202B;
 
-        <a href="#home" class="logo">
-            HDK
-        </a>
+    background: #FFFFFF;
 
-        <button class="menu-button" id="menuButton">
-            ☰ &nbsp; MENU
-        </button>
+    line-height: 1.6;
+}
 
-        <div class="menu" id="menu">
 
-            <a href="#home">Home</a>
-            <a href="#work">Selected Work</a>
-            <a href="#capabilities">Capabilities</a>
-            <a href="#contact">Contact</a>
+a {
+    text-decoration: none;
 
-        </div>
+    color: inherit;
+}
 
-    </nav>
 
+img {
+    max-width: 100%;
 
-    <!-- ================= HERO ================= -->
+    display: block;
+}
 
-    <div class="hero-container">
 
-        <div class="hero-content">
+:root {
 
-            <p class="eyebrow light">
-                HI, I'M
-            </p>
+    --navy: #071A35;
 
-            <h1>
-                Humaida<br>
-                Danjuma Khalid
-            </h1>
+    --deep-navy: #0B2347;
 
-            <h2>
-                Procurement & Data Analytics Professional
-            </h2>
+    --blue: #123B68;
 
-            <p class="hero-description">
-                I combine procurement expertise with data and analytics
-                to uncover insights, improve supplier performance and
-                support smarter business decisions.
-            </p>
+    --gold: #C9A227;
 
-            <div class="hero-buttons">
+    --soft-gold: #D8BC62;
 
-                <a href="#work" class="button primary">
-                    View My Work
-                </a>
+    --pale-gold: #F7F2E3;
 
-                <a
-                    href="https://docs.google.com/presentation/d/18xNb-o-ZP8tULiiCZ7OeVQGni9X9oFBvMnfDXqcwpMA/edit?usp=drivesdk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button outline"
-                >
-                    View My Portfolio ↗
-                </a>
+    --dark-text: #17202B;
 
-            </div>
+    --body-text: #59636D;
 
+    --border: #E0E4E8;
 
-            <!-- TOP SOCIAL ICONS -->
+    --white: #FFFFFF;
 
-            <div class="contact-links">
+}
 
-                <a
-                    href="https://www.linkedin.com/in/humaida-danjuma-66057224b"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                >
-                    <span class="social-icon linkedin-icon">
-                        in
-                    </span>
-                </a>
 
-                <a
-                    href="mailto:danjumahumaida@gmail.com"
-                    aria-label="Email Humaida"
-                >
-                    <span class="social-icon email-icon">
-                        ✉
-                    </span>
-                </a>
+/* =========================================================
+   CONTAINERS
+========================================================= */
 
-            </div>
+.container {
 
-        </div>
+    width: min(1180px, calc(100% - 68px));
 
+    margin: 0 auto;
 
-        <!-- PROFILE PHOTO -->
+}
 
-        <div class="hero-photo">
 
-            <img
-                src="assets/IMG_2226.jpeg"
-                alt="Humaida Danjuma Khalid"
-            >
+/* =========================================================
+   HERO
+========================================================= */
 
-        </div>
+.hero {
 
-    </div>
+    min-height: 720px;
 
-</header>
+    color: white;
 
+    position: relative;
 
-<!-- ================= SELECTED WORK ================= -->
+    overflow: hidden;
 
-<section class="work" id="work">
+    background:
+        radial-gradient(
+            circle at 78% 25%,
+            #173D69 0%,
+            #0B2347 42%,
+            #06162D 100%
+        );
 
-    <div class="container">
+}
 
-        <p class="eyebrow">
-            FEATURED PROJECTS
-        </p>
 
-        <h2>
-            Selected Work
-        </h2>
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
+.navbar {
 
-        <!-- PROCUREMENT -->
+    width: min(1180px, calc(100% - 68px));
 
-        <article class="project">
+    height: 86px;
 
-            <div class="project-image">
+    margin: 0 auto;
 
-                <img
-                    src="assets/procurement-dashboard.jpg"
-                    alt="Procurement Performance Dashboard"
-                >
+    display: flex;
 
-            </div>
+    align-items: center;
 
+    justify-content: space-between;
 
-            <div class="project-content">
+    position: relative;
 
-                <div>
+    z-index: 20;
 
-                    <span class="project-number">
-                        01 — PROCUREMENT
-                    </span>
+}
 
-                    <h3>
-                        Procurement Performance Dashboard
-                    </h3>
 
-                    <p>
-                        An interactive Power BI dashboard designed
-                        to monitor procurement spend, purchase orders,
-                        savings, delivery performance and supplier
-                        efficiency.
-                    </p>
+.logo {
 
+    font-size: 22px;
 
-                    <div class="tags">
+    font-weight: 800;
 
-                        <span>Power BI</span>
-                        <span>Procurement</span>
-                        <span>Supplier Performance</span>
-                        <span>KPI</span>
+    letter-spacing: 2px;
 
-                    </div>
+    color: var(--soft-gold);
 
-                </div>
+}
 
 
-                <a
-                    href="assets/procurement-dashboard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-button"
-                >
-                    View Project ↗
-                </a>
+.menu-wrapper {
 
-            </div>
+    position: relative;
 
-        </article>
+}
 
 
+.menu-wrapper summary {
 
-        <!-- SALES -->
+    list-style: none;
+}
 
-        <article class="project">
 
-            <div class="project-image">
+.menu-wrapper summary::-webkit-details-marker {
 
-                <img
-                    src="assets/sales-dashboard.jpg"
-                    alt="Sales Performance Dashboard"
-                >
+    display: none;
 
-            </div>
+}
 
 
-            <div class="project-content">
+.menu-button {
 
-                <div>
+    border: none;
 
-                    <span class="project-number">
-                        02 — DATA ANALYTICS
-                    </span>
+    background: rgba(255,255,255,0.08);
 
-                    <h3>
-                        Sales Performance Analysis
-                    </h3>
+    color: white;
 
-                    <p>
-                        A Power BI analysis exploring sales,
-                        revenue, profit, customers, products and
-                        business performance to support informed
-                        decision-making.
-                    </p>
+    padding: 13px 18px;
 
+    font-size: 13px;
 
-                    <div class="tags">
+    font-weight: 700;
 
-                        <span>Power BI</span>
-                        <span>Excel</span>
-                        <span>Data Analytics</span>
+    letter-spacing: 1.5px;
 
-                    </div>
+    cursor: pointer;
 
-                </div>
+}
 
 
-                <a
-                    href="assets/sales-dashboard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-button"
-                >
-                    View Project ↗
-                </a>
+.menu {
 
-            </div>
+    position: absolute;
 
-        </article>
+    top: 48px;
 
+    right: 0;
 
+    width: 190px;
 
-        <!-- PUBLIC HEALTH -->
+    padding: 12px;
 
-        <article class="project">
+    background: white;
 
-            <div class="project-image public-health">
+    box-shadow: 0 20px 50px rgba(0,0,0,0.16);
 
-                <div class="coming-soon">
+    border-radius: 4px;
 
-                    <span>
-                        PUBLIC HEALTH
-                    </span>
+}
 
-                    <strong>
-                        Dashboard Preview
-                    </strong>
 
-                    <small>
-                        Coming soon
-                    </small>
+.menu a {
 
-                </div>
+    display: block;
 
-            </div>
+    padding: 11px 13px;
 
+    font-size: 14px;
 
-            <div class="project-content">
+    font-weight: 600;
 
-                <div>
+    color: var(--dark-text);
 
-                    <span class="project-number">
-                        03 — PUBLIC HEALTH
-                    </span>
+}
 
-                    <h3>
-                        Community Health Data Analysis
-                    </h3>
 
-                    <p>
-                        Statistical analysis exploring health data
-                        and translating findings into clear,
-                        meaningful insights for decision-making.
-                    </p>
+.menu a:hover {
 
+    background: #F5F7FA;
 
-                    <div class="tags">
+    color: var(--navy);
 
-                        <span>SPSS</span>
-                        <span>Excel</span>
-                        <span>Public Health</span>
-                        <span>Statistics</span>
+}
 
-                    </div>
 
-                </div>
+/* =========================================================
+   HERO CONTENT
+========================================================= */
 
+.hero-container {
 
-                <span class="project-button disabled">
-                    Project Coming Soon
-                </span>
+    width: min(1180px, calc(100% - 68px));
 
-            </div>
+    margin: 0 auto;
 
-        </article>
+    min-height: 634px;
 
-    </div>
+    display: grid;
 
-</section>
+    grid-template-columns: 1fr 430px;
 
+    align-items: end;
 
-<!-- ================= CAPABILITIES ================= -->
+}
 
-<section class="capabilities" id="capabilities">
 
-    <div class="container">
+.hero-content {
 
-        <p class="eyebrow">
-            CAPABILITIES
-        </p>
+    padding-bottom: 92px;
 
-        <h2>
-            What I bring
-        </h2>
+    position: relative;
 
+    z-index: 3;
 
-        <div class="capability-grid">
+}
 
-            <div class="capability">
 
-                <h3>
-                    Procurement
-                </h3>
+.eyebrow {
 
-                <p>
-                    Supplier Management · Sourcing · Purchase Orders ·
-                    Inventory Management · Vendor Coordination ·
-                    Spend Analysis
-                </p>
+    font-size: 13px;
 
-            </div>
+    font-weight: 800;
 
+    letter-spacing: 2px;
 
-            <div class="capability">
+    color: var(--gold);
 
-                <h3>
-                    Data & Reporting
-                </h3>
+    margin-bottom: 9px;
 
-                <p>
-                    Microsoft Excel · Power BI · Power Query ·
-                    Data Cleaning · Dashboard Development ·
-                    Statistical Analysis
-                </p>
+}
 
-            </div>
 
+.eyebrow.light {
 
-            <div class="capability">
+    color: var(--soft-gold);
 
-                <h3>
-                    Stakeholder Engagement
-                </h3>
+}
 
-                <p>
-                    Negotiation · Client Relationship Management ·
-                    Cross-functional Coordination ·
-                    Relationship Building
-                </p>
 
-            </div>
+.hero h1 {
 
-        </div>
+    font-size: clamp(55px, 7vw, 88px);
 
-    </div>
+    line-height: 0.98;
 
-</section>
+    letter-spacing: -3px;
 
+    font-weight: 800;
 
-<!-- ================= CONTACT ================= -->
+    margin: 10px 0 22px;
 
-<section class="contact" id="contact">
+}
 
-    <div class="contact-container">
 
-        <div class="contact-symbol">
-            ✦
-        </div>
+.hero h2 {
 
+    font-size: 24px;
 
-        <div class="contact-text">
+    line-height: 1.35;
 
-            <p class="eyebrow">
-                LET'S CONNECT
-            </p>
+    font-weight: 600;
 
-            <h2>
-                Let's work together.
-            </h2>
+    color: var(--soft-gold);
 
-            <p>
-                Open to opportunities and collaborations across
-                procurement, analytics and business intelligence.
-            </p>
+    margin-bottom: 20px;
 
-        </div>
+    max-width: 650px;
 
+}
 
-        <!-- CONTACT SOCIAL ICONS -->
 
-        <div class="contact-icons">
+.hero-description {
 
-            <a
-                href="https://www.linkedin.com/in/humaida-danjuma-66057224b"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                class="bottom-social"
-            >
-                in
-            </a>
+    max-width: 650px;
 
-            <a
-                href="mailto:danjumahumaida@gmail.com"
-                aria-label="Email Humaida"
-                class="bottom-social"
-            >
-                ✉
-            </a>
+    font-family: "Playfair Display", Georgia, serif;
 
-        </div>
+    font-size: 20px;
 
-    </div>
+    line-height: 1.65;
 
-</section>
+    color: #F3F5F8;
 
+}
 
-<!-- ================= FOOTER ================= -->
 
-<footer>
+.hero-buttons {
 
-    <p>
-        © 2026 Humaida Danjuma Khalid
-    </p>
+    display: flex;
 
-    <p>
-        Procurement • Data • Analytics
-    </p>
+    flex-wrap: wrap;
 
-</footer>
+    gap: 15px;
 
-</body>
-</html>
+    margin-top: 31px;
+
+}
+
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 49px;
+
+    padding: 13px 22px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.button.primary {
+
+    background: var(--gold);
+
+    color: var(--navy);
+
+    border: 1px solid var(--gold);
+
+}
+
+
+.button.primary:hover {
+
+    background: var(--soft-gold);
+
+    border-color: var(--soft-gold);
+
+    transform: translateY(-2px);
+
+}
+
+
+.button.outline {
+
+    border: 1px solid rgba(216,188,98,0.75);
+
+    color: var(--soft-gold);
+
+    background: transparent;
+
+}
+
+
+.button.outline:hover {
+
+    background: rgba(216,188,98,0.09);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.contact-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+}
+
+
+.contact-links a:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.social-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.10);
+
+    border: 1px solid rgba(216,188,98,0.55);
+
+    color: var(--soft-gold);
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.social-icon:hover {
+
+    background: var(--gold);
+
+    color: var(--navy);
+
+    border-color: var(--gold);
+
+}
+
+
+/* =========================================================
+   PROFILE PHOTO
+========================================================= */
+
+.hero-photo {
+
+    height: 590px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+}
+
+
+.hero-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    border-radius: 260px 260px 0 0;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================================
+   SELECTED WORK
+========================================================= */
+
+.work {
+
+    background: #F8F9FB;
+
+}
+
+
+.work .container {
+
+    padding-top: 88px;
+
+    padding-bottom: 95px;
+
+}
+
+
+.work h2,
+.capabilities h2 {
+
+    font-size: 49px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.8px;
+
+    margin-bottom: 20px;
+
+    color: var(--dark-text);
+
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project {
+
+    display: grid;
+
+    grid-template-columns: 380px 1fr;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    margin-top: 24px;
+
+    box-shadow: 0 7px 28px rgba(10,28,48,0.045);
+
+}
+
+
+.project:first-of-type {
+
+    margin-top: 42px;
+
+}
+
+
+/* =========================================================
+   DASHBOARD PREVIEWS
+========================================================= */
+
+.project-image {
+
+    min-height: 280px;
+
+    overflow: hidden;
+
+}
+
+
+.dashboard-preview {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+
+.procurement-preview {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071A35 0%,
+            #123B68 60%,
+            #C9A227 150%
+        );
+
+}
+
+
+.sales-preview {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071A35 0%,
+            #173D69 55%,
+            #D8BC62 150%
+        );
+
+}
+
+
+.health-preview {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071A35 0%,
+            #0B2347 60%,
+            #C9A227 160%
+        );
+
+}
+
+
+.preview-content {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: white;
+
+}
+
+
+.preview-content span {
+
+    display: block;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: var(--soft-gold);
+
+    margin-bottom: 12px;
+
+}
+
+
+.preview-content strong {
+
+    display: block;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    max-width: 290px;
+
+}
+
+
+.preview-content small {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    color: #E9EDF1;
+
+}
+
+
+/* =========================================================
+   PROJECT CONTENT
+========================================================= */
+
+.project-content {
+
+    padding: 31px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+}
+
+
+.project-number {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: var(--gold);
+
+    margin-bottom: 8px;
+
+}
+
+
+.project-content h3 {
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+
+    color: var(--dark-text);
+
+}
+
+
+.project-content p {
+
+    max-width: 620px;
+
+    color: var(--body-text);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+}
+
+
+.tags span,
+.modal-tags span {
+
+    background: var(--pale-gold);
+
+    color: #765D12;
+
+    padding: 5px 10px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   PROJECT BUTTON
+========================================================= */
+
+.project-button {
+
+    align-self: flex-start;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 11px 18px;
+
+    border: 1px solid var(--navy);
+
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+
+}
+
+
+.project-button:hover {
+
+    background: var(--navy);
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   CAPABILITIES
+========================================================= */
+
+.capabilities {
+
+    background: white;
+
+}
+
+
+.capabilities .container {
+
+    padding-top: 88px;
+
+    padding-bottom: 88px;
+
+}
+
+
+.capability-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 35px;
+
+    margin-top: 38px;
+
+}
+
+
+.capability {
+
+    border-top: 2px solid var(--gold);
+
+    padding-top: 20px;
+
+}
+
+
+.capability h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+
+    color: var(--dark-text);
+
+}
+
+
+.capability p {
+
+    color: var(--body-text);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+
+    background: var(--pale-gold);
+
+    padding: 35px 0;
+
+}
+
+
+.contact-container {
+
+    width: min(1120px, calc(100% - 68px));
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+}
+
+
+.contact-symbol {
+
+    width: 53px;
+
+    height: 53px;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    background: var(--navy);
+
+    color: var(--gold);
+
+    font-size: 19px;
+
+    flex-shrink: 0;
+
+}
+
+
+.contact-text {
+
+    flex: 1;
+
+}
+
+
+.contact-text .eyebrow {
+
+    margin-bottom: 4px;
+
+}
+
+
+.contact-text h2 {
+
+    font-size: 27px;
+
+    line-height: 1.15;
+
+    margin-bottom: 4px;
+
+    color: var(--dark-text);
+
+}
+
+
+.contact-text p:last-child {
+
+    color: var(--body-text);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   CONTACT ICONS
+========================================================= */
+
+.contact-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.bottom-social {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--navy);
+
+    color: var(--gold);
+
+    border: 1px solid var(--navy);
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.bottom-social:hover {
+
+    background: var(--gold);
+
+    color: var(--navy);
+
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    width: min(1180px, calc(100% - 68px));
+
+    margin: 0 auto;
+
+    padding: 27px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #77817D;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   PROJECT OVERVIEW MODALS
+========================================================= */
+
+.project-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    background: rgba(4,15,30,0.78);
+
+}
+
+
+.project-modal:target {
+
+    display: flex;
+
+}
+
+
+.project-modal-box {
+
+    width: min(650px, 100%);
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 45px;
+
+    position: relative;
+
+    box-shadow: 0 30px 80px rgba(0,0,0,0.30);
+
+}
+
+
+.modal-close {
+
+    position: absolute;
+
+    top: 16px;
+
+    right: 20px;
+
+    width: 35px;
+
+    height: 35px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #F2F4F6;
+
+    color: var(--navy);
+
+    font-size: 25px;
+
+    line-height: 1;
+
+}
+
+
+.modal-number {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: var(--gold);
+
+    margin-bottom: 10px;
+
+}
+
+
+.project-modal-box h2 {
+
+    color: var(--dark-text);
+
+    font-size: 35px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+}
+
+
+.project-modal-box p {
+
+    color: var(--body-text);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+}
+
+
+.modal-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 22px 0 27px;
+
+}
+
+
+.modal-button {
+
+    width: fit-content;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+
+    .hero-container {
+
+        grid-template-columns: 1fr 350px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 65px;
+
+    }
+
+
+    .project {
+
+        grid-template-columns: 320px 1fr;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+
+    .container,
+    .navbar,
+    .hero-container {
+
+        width: min(100% - 42px, 600px);
+
+    }
+
+
+    .hero {
+
+        min-height: auto;
+
+    }
+
+
+    .navbar {
+
+        height: 75px;
+
+    }
+
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        padding-top: 20px;
+
+    }
+
+
+    .hero-content {
+
+        padding: 40px 0 45px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 55px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 18px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .button {
+
+        width: 100%;
+
+    }
+
+
+    .hero-photo {
+
+        height: 450px;
+
+        width: 100%;
+
+        max-width: 430px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .work .container,
+    .capabilities .container {
+
+        padding-top: 65px;
+
+        padding-bottom: 65px;
+
+    }
+
+
+    .work h2,
+    .capabilities h2 {
+
+        font-size: 39px;
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .capability-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .project {
+
+        grid-template-columns: 1fr;
+
+        margin-top: 20px;
+
+    }
+
+
+    .project:first-of-type {
+
+        margin-top: 32px;
+
+    }
+
+
+    .project-image {
+
+        height: 240px;
+
+        min-height: 240px;
+
+    }
+
+
+    .project-content {
+
+        padding: 25px;
+
+    }
+
+
+    .project-content h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .contact {
+
+        padding: 28px 0;
+
+    }
+
+
+    .contact-container {
+
+        width: min(100% - 42px, 600px);
+
+        flex-wrap: wrap;
+
+        align-items: flex-start;
+
+    }
+
+
+    .contact-text {
+
+        width: calc(100% - 75px);
+
+        flex: none;
+
+    }
+
+
+    .contact-icons {
+
+        margin-left: 75px;
+
+    }
+
+
+    footer {
+
+        width: min(100% - 42px, 600px);
+
+        flex-direction: column;
+
+        padding: 24px 0;
+
+        gap: 5px;
+
+    }
+
+
+    .project-modal-box {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .project-modal-box h2 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 430px) {
+
+
+    .hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .hero-photo {
+
+        height: 390px;
+
+    }
+
+
+    .project-image {
+
+        height: 210px;
+
+        min-height: 210px;
+
+    }
+
+
+    .work h2,
+    .capabilities h2 {
+
+        font-size: 35px;
+
+    }
+
+
+}
