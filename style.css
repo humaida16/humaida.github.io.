@@ -1,13 +1,14 @@
 /* =========================================================
    HUMAIDA DANJUMA KHALID
    PROCUREMENT & DATA ANALYTICS PORTFOLIO
-   NAVY + GOLD EDITION
+
+   NAVY + GOLD
    ========================================================= */
 
 
-/* =========================
-   1. GLOBAL SETTINGS
-   ========================= */
+/* =========================================================
+   GLOBAL
+========================================================= */
 
 * {
     box-sizing: border-box;
@@ -15,167 +16,81 @@
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: "DM Sans", Arial, sans-serif;
-    color: #17202b;
-    background: #ffffff;
+
+    color: #17202B;
+
+    background: #FFFFFF;
+
     line-height: 1.6;
 }
 
+
 a {
     text-decoration: none;
+
     color: inherit;
 }
 
+
 img {
     max-width: 100%;
+
     display: block;
 }
 
-button {
-    font-family: inherit;
-}
-
-
-/* =========================
-   2. COLOUR SYSTEM
-   ========================= */
 
 :root {
 
     --navy: #071A35;
+
     --deep-navy: #0B2347;
+
     --blue: #123B68;
 
     --gold: #C9A227;
+
     --soft-gold: #D8BC62;
+
     --pale-gold: #F7F2E3;
 
     --dark-text: #17202B;
+
     --body-text: #59636D;
-    --light-text: #F4F6F8;
 
     --border: #E0E4E8;
+
     --white: #FFFFFF;
 
 }
 
 
-/* =========================
-   3. REUSABLE CONTAINER
-   ========================= */
+/* =========================================================
+   CONTAINERS
+========================================================= */
 
 .container {
+
     width: min(1180px, calc(100% - 68px));
-    margin: 0 auto;
-}
-
-
-/* =========================
-   4. NAVIGATION
-   ========================= */
-
-.navbar {
-    width: min(1180px, calc(100% - 68px));
-    height: 86px;
 
     margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    position: relative;
-    z-index: 20;
 }
 
 
-.logo {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: var(--soft-gold);
-}
-
-
-.menu-button {
-    border: none;
-
-    background: rgba(255, 255, 255, 0.08);
-
-    color: white;
-
-    padding: 13px 18px;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-
-.menu-button:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-
-.menu {
-    display: none;
-
-    position: absolute;
-
-    top: 72px;
-    right: 0;
-
-    width: 190px;
-
-    padding: 12px;
-
-    background: white;
-
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
-
-    border-radius: 4px;
-}
-
-
-.menu.open {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.menu a {
-    padding: 11px 13px;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    color: var(--dark-text);
-
-    transition: 0.2s ease;
-}
-
-
-.menu a:hover {
-    background: #F5F7FA;
-    color: var(--navy);
-}
-
-
-/* =========================
-   5. HERO
-   ========================= */
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero {
+
     min-height: 720px;
 
     color: white;
@@ -191,8 +106,137 @@ button {
             #0B2347 42%,
             #06162D 100%
         );
+
 }
 
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+
+    width: min(1180px, calc(100% - 68px));
+
+    height: 86px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 20;
+
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: var(--soft-gold);
+
+}
+
+
+.menu-wrapper {
+
+    position: relative;
+
+}
+
+
+.menu-wrapper summary {
+
+    list-style: none;
+}
+
+
+.menu-wrapper summary::-webkit-details-marker {
+
+    display: none;
+
+}
+
+
+.menu-button {
+
+    border: none;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    padding: 13px 18px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+}
+
+
+.menu {
+
+    position: absolute;
+
+    top: 48px;
+
+    right: 0;
+
+    width: 190px;
+
+    padding: 12px;
+
+    background: white;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.16);
+
+    border-radius: 4px;
+
+}
+
+
+.menu a {
+
+    display: block;
+
+    padding: 11px 13px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: var(--dark-text);
+
+}
+
+
+.menu a:hover {
+
+    background: #F5F7FA;
+
+    color: var(--navy);
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
 
 .hero-container {
 
@@ -233,11 +277,14 @@ button {
     color: var(--gold);
 
     margin-bottom: 9px;
+
 }
 
 
 .eyebrow.light {
+
     color: var(--soft-gold);
+
 }
 
 
@@ -252,6 +299,7 @@ button {
     font-weight: 800;
 
     margin: 10px 0 22px;
+
 }
 
 
@@ -268,6 +316,7 @@ button {
     margin-bottom: 20px;
 
     max-width: 650px;
+
 }
 
 
@@ -282,6 +331,7 @@ button {
     line-height: 1.65;
 
     color: #F3F5F8;
+
 }
 
 
@@ -294,6 +344,7 @@ button {
     gap: 15px;
 
     margin-top: 31px;
+
 }
 
 
@@ -316,6 +367,7 @@ button {
     font-weight: 700;
 
     transition: all 0.25s ease;
+
 }
 
 
@@ -326,6 +378,7 @@ button {
     color: var(--navy);
 
     border: 1px solid var(--gold);
+
 }
 
 
@@ -336,30 +389,33 @@ button {
     border-color: var(--soft-gold);
 
     transform: translateY(-2px);
+
 }
 
 
 .button.outline {
 
-    border: 1px solid rgba(216, 188, 98, 0.75);
+    border: 1px solid rgba(216,188,98,0.75);
 
     color: var(--soft-gold);
 
     background: transparent;
+
 }
 
 
 .button.outline:hover {
 
-    background: rgba(216, 188, 98, 0.09);
+    background: rgba(216,188,98,0.09);
 
     transform: translateY(-2px);
+
 }
 
 
-/* =========================
-   TOP SOCIAL ICONS
-   ========================= */
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
 
 .contact-links {
 
@@ -370,40 +426,32 @@ button {
     gap: 12px;
 
     margin-top: 35px;
-}
 
-
-.contact-links a {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    transition: 0.25s ease;
 }
 
 
 .contact-links a:hover {
 
     transform: translateY(-2px);
+
 }
 
 
 .social-icon {
 
     width: 34px;
+
     height: 34px;
 
     display: grid;
+
     place-items: center;
 
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255,255,255,0.10);
 
-    border: 1px solid rgba(216, 188, 98, 0.55);
+    border: 1px solid rgba(216,188,98,0.55);
 
     color: var(--soft-gold);
 
@@ -412,6 +460,7 @@ button {
     font-weight: 800;
 
     transition: all 0.25s ease;
+
 }
 
 
@@ -422,12 +471,13 @@ button {
     color: var(--navy);
 
     border-color: var(--gold);
+
 }
 
 
-/* =========================
-   HERO PHOTO
-   ========================= */
+/* =========================================================
+   PROFILE PHOTO
+========================================================= */
 
 .hero-photo {
 
@@ -438,12 +488,14 @@ button {
     align-items: flex-end;
 
     justify-content: center;
+
 }
 
 
 .hero-photo img {
 
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -455,16 +507,18 @@ button {
     position: relative;
 
     z-index: 2;
+
 }
 
 
-/* =========================
-   6. SELECTED WORK
-   ========================= */
+/* =========================================================
+   SELECTED WORK
+========================================================= */
 
 .work {
 
     background: #F8F9FB;
+
 }
 
 
@@ -473,6 +527,7 @@ button {
     padding-top: 88px;
 
     padding-bottom: 95px;
+
 }
 
 
@@ -488,12 +543,13 @@ button {
     margin-bottom: 20px;
 
     color: var(--dark-text);
+
 }
 
 
-/* =========================
-   PROJECTS
-   ========================= */
+/* =========================================================
+   PROJECT CARD
+========================================================= */
 
 .project {
 
@@ -511,113 +567,144 @@ button {
 
     margin-top: 24px;
 
-    box-shadow: 0 7px 28px rgba(10, 28, 48, 0.045);
+    box-shadow: 0 7px 28px rgba(10,28,48,0.045);
+
 }
 
 
 .project:first-of-type {
 
     margin-top: 42px;
+
 }
 
+
+/* =========================================================
+   DASHBOARD PREVIEWS
+========================================================= */
 
 .project-image {
 
     min-height: 280px;
 
-    background: #EEF1F5;
-
     overflow: hidden;
+
 }
 
 
-.project-image img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.5s ease;
-}
-
-
-.project:hover .project-image img {
-
-    transform: scale(1.025);
-}
-
-
-/* =========================
-   PUBLIC HEALTH PLACEHOLDER
-   ========================= */
-
-.public-health {
-
-    background:
-        linear-gradient(
-            135deg,
-            #F5F0DF,
-            #FAFAF8
-        );
+.dashboard-preview {
 
     display: flex;
 
     align-items: center;
 
     justify-content: center;
+
+    position: relative;
+
 }
 
 
-.coming-soon {
+.procurement-preview {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071A35 0%,
+            #123B68 60%,
+            #C9A227 150%
+        );
+
+}
+
+
+.sales-preview {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071A35 0%,
+            #173D69 55%,
+            #D8BC62 150%
+        );
+
+}
+
+
+.health-preview {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071A35 0%,
+            #0B2347 60%,
+            #C9A227 160%
+        );
+
+}
+
+
+.preview-content {
 
     text-align: center;
 
     padding: 30px;
 
-    color: var(--navy);
+    color: white;
+
 }
 
 
-.coming-soon span {
+.preview-content span {
 
     display: block;
 
-    font-size: 12px;
+    font-size: 11px;
 
     font-weight: 800;
 
     letter-spacing: 2px;
 
-    margin-bottom: 10px;
+    color: var(--soft-gold);
 
-    color: var(--gold);
+    margin-bottom: 12px;
+
 }
 
 
-.coming-soon strong {
+.preview-content strong {
 
     display: block;
 
-    font-size: 25px;
+    font-family: "Playfair Display", Georgia, serif;
 
-    color: var(--dark-text);
+    font-size: 30px;
 
-    margin-bottom: 7px;
+    line-height: 1.2;
+
+    max-width: 290px;
+
 }
 
 
-.coming-soon small {
+.preview-content small {
 
-    color: var(--body-text);
+    display: block;
 
-    font-size: 13px;
+    margin-top: 15px;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    color: #E9EDF1;
+
 }
 
 
-/* =========================
+/* =========================================================
    PROJECT CONTENT
-   ========================= */
+========================================================= */
 
 .project-content {
 
@@ -630,6 +717,7 @@ button {
     justify-content: space-between;
 
     gap: 25px;
+
 }
 
 
@@ -646,6 +734,7 @@ button {
     color: var(--gold);
 
     margin-bottom: 8px;
+
 }
 
 
@@ -658,6 +747,7 @@ button {
     margin-bottom: 12px;
 
     color: var(--dark-text);
+
 }
 
 
@@ -670,12 +760,13 @@ button {
     font-size: 15px;
 
     line-height: 1.75;
+
 }
 
 
-/* =========================
+/* =========================================================
    TAGS
-   ========================= */
+========================================================= */
 
 .tags {
 
@@ -686,10 +777,12 @@ button {
     gap: 8px;
 
     margin-top: 18px;
+
 }
 
 
-.tags span {
+.tags span,
+.modal-tags span {
 
     background: var(--pale-gold);
 
@@ -702,12 +795,13 @@ button {
     font-size: 11px;
 
     font-weight: 600;
+
 }
 
 
-/* =========================
+/* =========================================================
    PROJECT BUTTON
-   ========================= */
+========================================================= */
 
 .project-button {
 
@@ -730,6 +824,7 @@ button {
     font-weight: 700;
 
     transition: 0.25s ease;
+
 }
 
 
@@ -738,32 +833,18 @@ button {
     background: var(--navy);
 
     color: white;
+
 }
 
 
-.project-button.disabled {
-
-    opacity: 0.55;
-
-    cursor: default;
-}
-
-
-.project-button.disabled:hover {
-
-    background: transparent;
-
-    color: var(--dark-text);
-}
-
-
-/* =========================
-   7. CAPABILITIES
-   ========================= */
+/* =========================================================
+   CAPABILITIES
+========================================================= */
 
 .capabilities {
 
     background: white;
+
 }
 
 
@@ -772,6 +853,7 @@ button {
     padding-top: 88px;
 
     padding-bottom: 88px;
+
 }
 
 
@@ -779,11 +861,12 @@ button {
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
 
     gap: 35px;
 
     margin-top: 38px;
+
 }
 
 
@@ -792,6 +875,7 @@ button {
     border-top: 2px solid var(--gold);
 
     padding-top: 20px;
+
 }
 
 
@@ -802,6 +886,7 @@ button {
     margin-bottom: 10px;
 
     color: var(--dark-text);
+
 }
 
 
@@ -812,18 +897,20 @@ button {
     font-size: 15px;
 
     line-height: 1.75;
+
 }
 
 
-/* =========================
-   8. CONTACT
-   ========================= */
+/* =========================================================
+   CONTACT
+========================================================= */
 
 .contact {
 
     background: var(--pale-gold);
 
     padding: 35px 0;
+
 }
 
 
@@ -838,17 +925,20 @@ button {
     align-items: center;
 
     gap: 22px;
+
 }
 
 
 .contact-symbol {
 
     width: 53px;
+
     height: 53px;
 
     border-radius: 50%;
 
     display: grid;
+
     place-items: center;
 
     background: var(--navy);
@@ -858,18 +948,21 @@ button {
     font-size: 19px;
 
     flex-shrink: 0;
+
 }
 
 
 .contact-text {
 
     flex: 1;
+
 }
 
 
 .contact-text .eyebrow {
 
     margin-bottom: 4px;
+
 }
 
 
@@ -882,6 +975,7 @@ button {
     margin-bottom: 4px;
 
     color: var(--dark-text);
+
 }
 
 
@@ -890,12 +984,13 @@ button {
     color: var(--body-text);
 
     font-size: 14px;
+
 }
 
 
-/* =========================
-   CONTACT SOCIAL ICONS
-   ========================= */
+/* =========================================================
+   CONTACT ICONS
+========================================================= */
 
 .contact-icons {
 
@@ -904,15 +999,18 @@ button {
     align-items: center;
 
     gap: 12px;
+
 }
 
 
 .bottom-social {
 
     width: 44px;
+
     height: 44px;
 
     display: grid;
+
     place-items: center;
 
     border-radius: 50%;
@@ -928,6 +1026,7 @@ button {
     font-weight: 800;
 
     transition: all 0.25s ease;
+
 }
 
 
@@ -940,12 +1039,13 @@ button {
     border-color: var(--gold);
 
     transform: translateY(-2px);
+
 }
 
 
-/* =========================
-   9. FOOTER
-   ========================= */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer {
 
@@ -964,64 +1064,206 @@ footer {
     color: #77817D;
 
     font-size: 13px;
+
 }
 
 
-/* =========================
-   10. TABLET
-   ========================= */
+/* =========================================================
+   PROJECT OVERVIEW MODALS
+========================================================= */
+
+.project-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    background: rgba(4,15,30,0.78);
+
+}
+
+
+.project-modal:target {
+
+    display: flex;
+
+}
+
+
+.project-modal-box {
+
+    width: min(650px, 100%);
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 45px;
+
+    position: relative;
+
+    box-shadow: 0 30px 80px rgba(0,0,0,0.30);
+
+}
+
+
+.modal-close {
+
+    position: absolute;
+
+    top: 16px;
+
+    right: 20px;
+
+    width: 35px;
+
+    height: 35px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #F2F4F6;
+
+    color: var(--navy);
+
+    font-size: 25px;
+
+    line-height: 1;
+
+}
+
+
+.modal-number {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: var(--gold);
+
+    margin-bottom: 10px;
+
+}
+
+
+.project-modal-box h2 {
+
+    color: var(--dark-text);
+
+    font-size: 35px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+}
+
+
+.project-modal-box p {
+
+    color: var(--body-text);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+}
+
+
+.modal-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 22px 0 27px;
+
+}
+
+
+.modal-button {
+
+    width: fit-content;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 900px) {
+
 
     .hero-container {
 
         grid-template-columns: 1fr 350px;
+
     }
 
 
     .hero h1 {
 
         font-size: 65px;
-    }
 
-
-    .hero-description {
-
-        font-size: 18px;
     }
 
 
     .project {
 
         grid-template-columns: 320px 1fr;
+
     }
 
 }
 
 
-/* =========================
-   11. MOBILE
-   ========================= */
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 760px) {
+
 
     .container,
     .navbar,
     .hero-container {
 
         width: min(100% - 42px, 600px);
+
     }
 
 
     .hero {
 
         min-height: auto;
+
     }
 
 
     .navbar {
 
         height: 75px;
+
     }
 
 
@@ -1032,12 +1274,14 @@ footer {
         min-height: auto;
 
         padding-top: 20px;
+
     }
 
 
     .hero-content {
 
         padding: 40px 0 45px;
+
     }
 
 
@@ -1046,18 +1290,21 @@ footer {
         font-size: 55px;
 
         letter-spacing: -2px;
+
     }
 
 
     .hero h2 {
 
         font-size: 20px;
+
     }
 
 
     .hero-description {
 
         font-size: 18px;
+
     }
 
 
@@ -1066,22 +1313,14 @@ footer {
         flex-direction: column;
 
         align-items: stretch;
+
     }
 
 
     .button {
 
         width: 100%;
-    }
 
-
-    .contact-links {
-
-        align-items: center;
-
-        flex-direction: row;
-
-        gap: 12px;
     }
 
 
@@ -1094,6 +1333,7 @@ footer {
         max-width: 430px;
 
         margin: 0 auto;
+
     }
 
 
@@ -1103,6 +1343,7 @@ footer {
         padding-top: 65px;
 
         padding-bottom: 65px;
+
     }
 
 
@@ -1112,6 +1353,7 @@ footer {
         font-size: 39px;
 
         letter-spacing: -1px;
+
     }
 
 
@@ -1121,7 +1363,6 @@ footer {
 
         gap: 30px;
 
-        margin-top: 38px;
     }
 
 
@@ -1130,12 +1371,14 @@ footer {
         grid-template-columns: 1fr;
 
         margin-top: 20px;
+
     }
 
 
     .project:first-of-type {
 
         margin-top: 32px;
+
     }
 
 
@@ -1144,24 +1387,28 @@ footer {
         height: 240px;
 
         min-height: 240px;
+
     }
 
 
     .project-content {
 
         padding: 25px;
+
     }
 
 
     .project-content h3 {
 
         font-size: 24px;
+
     }
 
 
     .contact {
 
         padding: 28px 0;
+
     }
 
 
@@ -1172,6 +1419,7 @@ footer {
         flex-wrap: wrap;
 
         align-items: flex-start;
+
     }
 
 
@@ -1180,12 +1428,14 @@ footer {
         width: calc(100% - 75px);
 
         flex: none;
+
     }
 
 
     .contact-icons {
 
         margin-left: 75px;
+
     }
 
 
@@ -1198,26 +1448,44 @@ footer {
         padding: 24px 0;
 
         gap: 5px;
+
+    }
+
+
+    .project-modal-box {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .project-modal-box h2 {
+
+        font-size: 28px;
+
     }
 
 }
 
 
-/* =========================
-   12. SMALL PHONES
-   ========================= */
+/* =========================================================
+   SMALL PHONES
+========================================================= */
 
 @media (max-width: 430px) {
+
 
     .hero h1 {
 
         font-size: 48px;
+
     }
 
 
     .hero-photo {
 
         height: 390px;
+
     }
 
 
@@ -1226,6 +1494,7 @@ footer {
         height: 210px;
 
         min-height: 210px;
+
     }
 
 
@@ -1233,12 +1502,8 @@ footer {
     .capabilities h2 {
 
         font-size: 35px;
+
     }
 
-
-    .contact-icons {
-
-        margin-left: 75px;
-    }
 
 }
