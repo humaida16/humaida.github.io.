@@ -28,7 +28,7 @@
             HDK
         </a>
 
-        <button class="menu-button" id="menuButton">
+        <button class="menu-button" id="menuButton" aria-label="Open navigation menu">
             ☰ &nbsp; MENU
         </button>
 
@@ -76,12 +76,12 @@
                 </a>
 
                 <a
-                    href="https://docs.google.com/presentation/d/18xNb-o-ZP8tULiiCZ7OeVQGni9X9oFBvMnfDXqcwpMA/edit?usp=drivesdk"
+                    href="https://docs.google.com/presentation/d/1Wkd6-342QBtwpPSebAIlRK9LK2oRs5e5/edit?usp=drivesdk&ouid=115109666376617268705&rtpof=true&sd=true"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="button outline"
                 >
-                    View My Certificates ↗
+                    View My Certificate ↗
                 </a>
 
             </div>
@@ -155,7 +155,7 @@
 
                 <img
                     src="assets/procurement-dashboard.jpg"
-                    alt="Procurement Executive Dashboard"
+                    alt="Procurement Performance Dashboard"
                 >
 
             </div>
@@ -175,16 +175,14 @@
 
                     <p>
                         With <strong>₦26.9B</strong> in procurement spend across
-                        <strong>650 purchase orders</strong>, the challenge was to
-                        turn procurement activity into clear, actionable visibility.
-                        This dashboard brings spend, savings, supplier and delivery
-                        performance into one view, highlighting <strong>₦1.8B in savings</strong>,
-                        a <strong>40.5% on-time delivery rate</strong> and an average
-                        supplier rating of <strong>3.54</strong>. It enables faster
-                        identification of spend patterns, performance gaps and areas
-                        requiring management attention.
+                        <strong>650 purchase orders</strong>, this dashboard turns
+                        procurement activity into clear management visibility.
+                        It highlights <strong>₦1.8B in savings</strong>,
+                        <strong>40.5% on-time delivery</strong> and an average
+                        supplier rating of <strong>3.54</strong>, making it easier
+                        to identify spend patterns, supplier gaps and areas
+                        requiring attention.
                     </p>
-
 
                     <div class="tags">
 
@@ -198,14 +196,12 @@
                 </div>
 
 
-                <a
-                    href="assets/procurement-dashboard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <button
                     class="project-button"
+                    onclick="openProject('procurement')"
                 >
                     View Project ↗
-                </a>
+                </button>
 
             </div>
 
@@ -221,7 +217,7 @@
 
                 <img
                     src="assets/sales-dashboard.jpg"
-                    alt="Maven Electronics Sales Dashboard"
+                    alt="Sales Performance Dashboard"
                 >
 
             </div>
@@ -240,22 +236,20 @@
                     </h3>
 
                     <p>
-                        The business generated <strong>$55.8M in revenue</strong> and
-                        <strong>$32.7M in profit</strong> from <strong>198K units sold</strong>
-                        across <strong>12K customers</strong>. This dashboard was built
-                        to move beyond headline figures and uncover what was driving
-                        performance. It analyses revenue, profit, product categories,
-                        customer segments and geographic performance, revealing where
-                        sales were strongest and where opportunities for growth and
-                        improved performance existed.
+                        With <strong>$55.8M in revenue</strong>,
+                        <strong>$32.7M in profit</strong> and
+                        <strong>198K units sold</strong> across
+                        <strong>12K customers</strong>, this dashboard
+                        goes beyond headline figures to show what is
+                        driving business performance across products,
+                        customers and markets.
                     </p>
-
 
                     <div class="tags">
 
                         <span>Power BI</span>
+                        <span>Excel</span>
                         <span>Data Analytics</span>
-                        <span>Sales Analysis</span>
                         <span>Business Intelligence</span>
 
                     </div>
@@ -263,14 +257,12 @@
                 </div>
 
 
-                <a
-                    href="assets/sales-dashboard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <button
                     class="project-button"
+                    onclick="openProject('sales')"
                 >
                     View Project ↗
-                </a>
+                </button>
 
             </div>
 
@@ -282,7 +274,7 @@
 
         <article class="project">
 
-            <div class="project-image public-health">
+            <div class="project-image">
 
                 <img
                     src="assets/public-health-dashboard.jpg"
@@ -305,39 +297,34 @@
                     </h3>
 
                     <p>
-                        Public health surveillance can involve large volumes of
-                        information across locations, diseases and reporting
-                        facilities. This dashboard brings together <strong>5M total
-                        population</strong>, <strong>7K reported cases</strong>,
-                        <strong>18K recorded deaths</strong> and <strong>3K health
-                        events</strong> across <strong>5 diseases</strong> and
-                        <strong>5 reporting facilities</strong>. It makes patterns
-                        easier to explore by state, LGA, disease and year, helping
-                        transform complex surveillance data into a clearer picture
-                        of where health events and outcomes are concentrated.
+                        This dashboard brings together approximately
+                        <strong>7K reported cases</strong>,
+                        <strong>18K deaths</strong> and
+                        <strong>3K health events</strong> across
+                        <strong>5 diseases</strong> and
+                        <strong>5 reporting facilities</strong> to make
+                        disease patterns, geographic differences and
+                        trends easier to understand.
                     </p>
-
 
                     <div class="tags">
 
                         <span>Power BI</span>
                         <span>Public Health</span>
                         <span>Data Visualization</span>
-                        <span>Health Surveillance</span>
+                        <span>Statistics</span>
 
                     </div>
 
                 </div>
 
 
-                <a
-                    href="assets/public-health-dashboard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <button
                     class="project-button"
+                    onclick="openProject('health')"
                 >
                     View Project ↗
-                </a>
+                </button>
 
             </div>
 
@@ -346,6 +333,101 @@
     </div>
 
 </section>
+
+
+<!-- ================= PROJECT OVERVIEW POPUP ================= -->
+
+<div class="project-modal" id="projectModal">
+
+    <div
+        class="project-modal-overlay"
+        onclick="closeProject()"
+    ></div>
+
+
+    <div
+        class="project-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+    >
+
+        <button
+            class="modal-close"
+            onclick="closeProject()"
+            aria-label="Close project overview"
+        >
+            ×
+        </button>
+
+
+        <p class="modal-label" id="modalLabel">
+            PROJECT OVERVIEW
+        </p>
+
+
+        <h2 id="modalTitle">
+            Project Title
+        </h2>
+
+
+        <div class="modal-section">
+
+            <h4>
+                THE PROBLEM
+            </h4>
+
+            <p id="modalProblem"></p>
+
+        </div>
+
+
+        <div class="modal-section">
+
+            <h4>
+                THE APPROACH
+            </h4>
+
+            <p id="modalAnalysis"></p>
+
+        </div>
+
+
+        <div class="modal-section">
+
+            <h4>
+                KEY FINDINGS
+            </h4>
+
+            <p id="modalFindings"></p>
+
+        </div>
+
+
+        <div class="modal-section">
+
+            <h4>
+                THE VALUE
+            </h4>
+
+            <p id="modalImpact"></p>
+
+        </div>
+
+
+        <a
+            href="#"
+            id="dashboardLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="modal-dashboard-button"
+        >
+            View Dashboard ↗
+        </a>
+
+    </div>
+
+</div>
 
 
 <!-- ================= CAPABILITIES ================= -->
@@ -444,8 +526,6 @@
 
         </div>
 
-
-        <!-- CONTACT SOCIAL ICONS -->
 
         <div class="contact-icons">
 
